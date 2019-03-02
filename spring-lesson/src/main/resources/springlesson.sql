@@ -33,7 +33,7 @@ CREATE TABLE `blog` (
 -- ----------------------------
 -- Records of blog
 -- ----------------------------
-INSERT INTO `blog` VALUES ('1', 'SpringMVC Lesson', '这是SpringMVC Lesson教程', '2', '2018-01-12');
+INSERT INTO `blog` VALUES ('1', 'SpringMVC Lesson', 'SpringMVC Lesson', '2', '2018-01-12');
 
 -- ----------------------------
 -- Table structure for `user`

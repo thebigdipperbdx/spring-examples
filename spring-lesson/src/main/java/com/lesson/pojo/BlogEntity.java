@@ -4,6 +4,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Objects;
 
 /**
  * Created by thebigdipper on 2018-01-12 22:59:31.
@@ -68,51 +69,21 @@ public class BlogEntity {
         this.userByUserId = userByUserId;
     }
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((content == null) ? 0 : content.hashCode());
-		result = prime * result + id;
-		result = prime * result + ((pubDate == null) ? 0 : pubDate.hashCode());
-		result = prime * result + ((title == null) ? 0 : title.hashCode());
-		result = prime * result + ((userByUserId == null) ? 0 : userByUserId.hashCode());
-		return result;
-	}
+    @Override
+    public boolean equals(Object o){
+        if (this==o) return true;
+        if (o==null || getClass()!=o.getClass()) return false;
+        BlogEntity that=(BlogEntity) o;
+        return id==that.id &&
+                Objects.equals(title, that.title) &&
+                Objects.equals(content, that.content) &&
+                Objects.equals(pubDate, that.pubDate) &&
+                Objects.equals(userByUserId, that.userByUserId);
+    }
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		BlogEntity other = (BlogEntity) obj;
-		if (content == null) {
-			if (other.content != null)
-				return false;
-		} else if (!content.equals(other.content))
-			return false;
-		if (id != other.id)
-			return false;
-		if (pubDate == null) {
-			if (other.pubDate != null)
-				return false;
-		} else if (!pubDate.equals(other.pubDate))
-			return false;
-		if (title == null) {
-			if (other.title != null)
-				return false;
-		} else if (!title.equals(other.title))
-			return false;
-		if (userByUserId == null) {
-			if (other.userByUserId != null)
-				return false;
-		} else if (!userByUserId.equals(other.userByUserId))
-			return false;
-		return true;
-	}
-    
-    
+    @Override
+    public int hashCode(){
+
+        return Objects.hash(id, title, content, pubDate, userByUserId);
+    }
 }

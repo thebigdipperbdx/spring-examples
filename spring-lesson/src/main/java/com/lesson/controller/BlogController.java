@@ -24,10 +24,10 @@ import com.lesson.repository.UserRepository;
 public class BlogController {
 
     @Autowired
-    BlogRepository blogRepository;
+    private BlogRepository blogRepository;
 
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     // 查看所有博文
     @RequestMapping(value = "blogs", method = RequestMethod.GET)

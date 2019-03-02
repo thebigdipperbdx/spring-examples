@@ -21,7 +21,7 @@ public class UserController {
 
     // 自动装配数据库接口，不需要再写原始的Connection来操作数据库
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     @RequestMapping(value = "/admin/users", method = RequestMethod.GET)
     public String getUsers(ModelMap modelMap) {
