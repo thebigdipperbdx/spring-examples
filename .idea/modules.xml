@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-examples.iml" filepath="$PROJECT_DIR$/.idea/spring-examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-lesson/spring-lesson.iml" filepath="$PROJECT_DIR$/spring-lesson/spring-lesson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc-webservice/spring-mvc-webservice.iml" filepath="$PROJECT_DIR$/spring-mvc-webservice/spring-mvc-webservice.iml" />
     </modules>
   </component>
 </project>
