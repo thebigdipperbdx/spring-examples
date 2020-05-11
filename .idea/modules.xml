@@ -3,8 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-examples.iml" filepath="$PROJECT_DIR$/.idea/spring-examples.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-lesson/spring-lesson.iml" filepath="$PROJECT_DIR$/spring-lesson/spring-lesson.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc-webservice/spring-mvc-webservice.iml" filepath="$PROJECT_DIR$/spring-mvc-webservice/spring-mvc-webservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wenzhou-orderpush/wenzhou-orderpush.iml" filepath="$PROJECT_DIR$/wenzhou-orderpush/wenzhou-orderpush.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wenzhou-orderreceive/wenzhou-orderreceive.iml" filepath="$PROJECT_DIR$/wenzhou-orderreceive/wenzhou-orderreceive.iml" />
     </modules>
   </component>
 </project>
